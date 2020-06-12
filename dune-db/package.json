@@ -1,0 +1,35 @@
+{
+  "name": "dune-db",
+  "version": "1.0.0",
+  "description": "IoT platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "DEBUG=dune:* node setup.js",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shherardd/dune.git"
+  },
+  "keywords": [
+    "dune"
+  ],
+  "author": "Luis Gerardo L",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shherardd/dune/issues"
+  },
+  "homepage": "https://github.com/Shherardd/dune#readme",
+  "devDependencies": {
+    "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.1.1",
+    "inquirer": "^7.1.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.12"
+  }
+}
