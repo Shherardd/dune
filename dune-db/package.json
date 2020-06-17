@@ -6,7 +6,8 @@
   "scripts": {
     "setup": "DEBUG=dune:* node setup.js",
     "lint": "standard",
-    "lint-fix": "standard --fix"
+    "lint-fix": "standard --fix",
+    "test": "DEBUG=dune:* ava tests/* --verbose"
   },
   "repository": {
     "type": "git",
@@ -22,11 +23,14 @@
   },
   "homepage": "https://github.com/Shherardd/dune#readme",
   "devDependencies": {
+    "ava": "^3.8.2",
+    "sqlite3": "^4.2.0",
     "standard": "^14.3.4"
   },
   "dependencies": {
     "chalk": "^4.1.0",
     "debug": "^4.1.1",
+    "defaults": "^1.0.3",
     "inquirer": "^7.1.0",
     "pg": "^8.2.1",
     "pg-hstore": "^2.3.3",
