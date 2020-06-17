@@ -7,7 +7,15 @@ const defaults = require('defaults')
 
 module.exports = async function (config) {
   config = defaults(config, {
-    dialect : 'sqlite'
+    dialect : 'sqlite',
+    pool: {
+      max: 10,
+      min: 0,
+      idle: 1000
+    },
+    query: {
+      raw: true
+    }
   })
 
   const sequelize = setupDatabase(config)
