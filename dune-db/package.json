@@ -7,7 +7,7 @@
     "setup": "DEBUG=dune:* node setup.js",
     "lint": "standard",
     "lint-fix": "standard --fix",
-    "test": "DEBUG=dune:* ava tests/* --verbose"
+    "test": "DEBUG=dune:* nyc --reporter=lcov ava tests/* --verbose"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Shherardd/dune#readme",
   "devDependencies": {
     "ava": "^3.8.2",
+    "nyc": "^15.1.0",
     "sqlite3": "^4.2.0",
     "standard": "^14.3.4"
   },
